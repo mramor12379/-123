@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            transition: background-color 0.5s;
+        }
+        #imageContainer {
+            width: 400px;
+            height: 300px;
+            margin: 20px auto;
+            border: 2px solid #333;
+        }
+        #imageContainer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .controls {
+            margin: 20px 0;
+            text-align: center;
+        }
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer">
+        <img id="mainImage" src="" alt="Зображення">
+    </div>
+    
+    <div class="controls">
+        <label>Мін:</label>
+        <input type="number" id="minVal" value="1">
+        <label>Макс:</label>
+        <input type="number" id="maxVal" value="100">
+        <button onclick="generateTable()">Створити таблицю</button>
+    </div>
+    
+    <div id="tableContainer"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
